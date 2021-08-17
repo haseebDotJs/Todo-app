@@ -1,0 +1,128 @@
+body{
+    width: 1020px;
+    margin: 0px auto;
+    background-color: rgb(255, 219, 225);
+    text-align: center;   
+    font-family: Arial, Helvetica, sans-serif; 
+}
+#add {
+    width: 36.5%;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 37);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;  
+    font-size: 20px;
+    cursor: pointer;
+}
+.numbering{
+    width: 4%;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-align: center;
+    background-color: rgb(202, 230, 255);
+    list-style-type: none;
+    /* border-radius: 5px; */
+
+}
+
+#btn, #reset {
+    margin-top: 30px;
+    padding: 9px;
+    border: 1px solid rgb(0, 0, 37);
+    border-radius: 5px;
+    background-color: rgb(23, 0, 49);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+.edit-btn {
+    border: none;
+    padding: 15px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    order: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+div[class^="new-list"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-check, .fa-trash {
+ pointer-events: none;
+}
+.check-btn, .delete-btn{
+    border: none;
+    background-color: white;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.check-btn{
+    background-color: rgb(143, 209, 143);
+}
+.check-btn:hover{
+    background-color: rgb(33, 248, 33);
+    color: white;
+}
+.checked {
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(33, 248, 33);
+    color: white;
+}
+.checked:hover{
+    background-color: rgb(33, 248, 33) !important;
+    color: white !important;
+}
+.delete-btn{
+    background-color: rgb(219, 81, 81);
+}
+.delete-btn:hover{
+    background-color: rgb(199, 0, 0);
+    color: white;
+}
+.completed {
+    text-decoration: line-through; 
+    opacity: 0.3; 
+}
+.undo{
+    opacity: 2.0;
+    cursor: pointer;
+    text-decoration: underline;
+    order: 3;
+    color: rgb(121, 55, 55);
+}
+#list {
+margin-top: 30px;
+}
+.todo-item {
+    width: 50%;
+    font-size: 20px;
+    padding: 15px 15px;
+    background-color: white;
+    border: none;
+    /* border-radius: 0px; */
+    margin: 15px 0px;
+    list-style-type: none;
+    text-align: left;
+}
+#item1:focus, #item2:focus {
+    border: 2px solid rgb(0, 0, 49);
+}
+.ctHeading{
+    display: none;
+    font-size: 24px;
+}
+.ct{
+    color: rgb(0, 72, 75);
+}
