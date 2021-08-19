@@ -104,8 +104,10 @@ function deleteItem(e) {
   }
 }
 function addToCompleted(e) {
+  let convertingIdToNumber = +e.replace('_','')
+  console.log('add this index to completed', convertingIdToNumber);
   let gettingCompletedItemsFromLS = localStorage.getItem("completedItem");
-  let savingCompleted
+  let savingCompleted;
   if (gettingCompletedItemsFromLS === null) {
     savingCompleted = []
   }
@@ -114,7 +116,7 @@ function addToCompleted(e) {
   }
   //  let checked_btn = document.getElementById(e)
   //  checked_btn.style.display = "none"
-  let numberToRemove = e.charAt(e.length - 1)
+  let numberToRemove = convertingIdToNumber
   console.log("iam checking and removing number " + numberToRemove);
   let gettingItemsFromLS = localStorage.getItem("todoItem");
   let arrOfItems = JSON.parse(gettingItemsFromLS);
